@@ -1,0 +1,20 @@
+{
+  "main": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "caseStudies": [
+    {
+      "url": "https://youtu.be/aqz-KE-bpKQ",
+      "title": "High-volume Fried Rice — Food Court Use",
+      "meta": "Lunch rush demo (2x speed)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ysz5S6PUM-U",
+      "title": "Stir-Fry Station Automation — Korean BBQ",
+      "meta": "Consistent searing with less labour"
+    },
+    {
+      "url": "https://youtu.be/bHQqvYy5KYo",
+      "title": "Batch Sauté — Burger Shop Prep",
+      "meta": "Onions & toppings, standardized"
+    }
+  ]
+}

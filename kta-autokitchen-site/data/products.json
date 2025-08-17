@@ -1,0 +1,37 @@
+[
+  {
+    "sku": "KTA-TUMBLER-100",
+    "name": "KTA 자동통돌이 100",
+    "tagline": "가스 화구 위에 놓고 사용하는 자동 텀블러 — 볶음/코팅 작업 표준화",
+    "image": "assets/product-placeholder.svg",
+    "badge": "핵심",
+    "bullets": [
+      "LPG 2.5kPa / NG 2.0kPa 호환",
+      "8L 작업용량, 고온 연속 운전",
+      "타이머·회전 속도 간단 조절"
+    ]
+  },
+  {
+    "sku": "KTA-STIR-150",
+    "name": "KTA Auto Stir 150",
+    "tagline": "대량 볶음/소테 작업 자동화",
+    "image": "assets/product-placeholder.svg",
+    "badge": "인기",
+    "bullets": [
+      "고온·다량 조리에 최적화된 구조",
+      "일관된 품질, 초보자도 동일한 맛",
+      "세척·유지보수 간편"
+    ]
+  },
+  {
+    "sku": "KTA-FRY-200",
+    "name": "KTA Auto Fry 200",
+    "tagline": "자동 튀김 솔루션 — 타이머/리프트 옵션",
+    "image": "assets/product-placeholder.svg",
+    "bullets": [
+      "표준화된 튀김 품질",
+      "안전한 오일 관리",
+      "부하 대응형 히팅 제어"
+    ]
+  }
+]
