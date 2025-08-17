@@ -1,27 +1,153 @@
-<div style="max-width:1200px;margin:0 auto;padding:24px 20px;text-align:center;font-family:system-ui,Segoe UI,Roboto,Apple SD Gothic Neo,Apple Color Emoji,Arial,sans-serif;">
-  <h1 style="margin:0 0 10px;font-size:40px;line-height:1.15;">KTA Auto Kitchen</h1>
-  <p style="margin:0 0 22px;font-size:16px;opacity:.9;">
-    호주 외식업 인건비 절감을 위한 자동화 조리 솔루션
-  </p>
-
-  <div style="position:relative;width:100%;padding-top:56.25%;border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.12);">
-    <iframe
-      src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1&playsinline=1"
-      title="KTA Auto Kitchen Demo"
-      style="position:absolute;inset:0;border:0;width:100%;height:100%;"
-      allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share"
-      loading="lazy"
-      allowfullscreen></iframe>
-  </div>
-
-  <div style="margin-top:18px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-    <a href="mailto:you@example.com?subject=KTA%20Auto%20Kitchen%20문의"
-       style="text-decoration:none;padding:12px 18px;border-radius:10px;border:1px solid #ddd;display:inline-block;">
-       상담 문의
+[index.html](https://github.com/user-attachments/files/21820147/index.html)
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KTA auto kitchen — Automated Cooking Equipment</title>
+  <meta name="description" content="KTA auto kitchen — 자동화 조리기기. 인건비 절감과 일관된 품질을 위한 세련된 솔루션." />
+  <meta name="theme-color" content="#0f172a" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="KTA auto kitchen — Automated Cooking Equipment" />
+  <meta property="og:description" content="인건비 절감과 품질 향상을 한 번에. KTA auto kitchen의 자동화 조리 솔루션." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.svg" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preload" href="css/styles.css" as="style" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "KTA auto kitchen",
+    "url": "https://example.com",
+    "logo": "https://example.com/assets/logo.svg",
+    "brand": "KTA auto kitchen",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header container">
+    <a href="#" class="brand">
+      <img src="assets/logo.svg" alt="KTA auto kitchen 로고" width="40" height="40" />
+      <span class="brand__name">KTA auto kitchen</span>
     </a>
-    <a href="https://your-site.com/catalog" target="_blank"
-       style="text-decoration:none;padding:12px 18px;border-radius:10px;background:#111;color:#fff;display:inline-block;">
-       제품 살펴보기
-    </a>
-  </div>
-</div>
+    <nav class="nav">
+      <a href="#video">Demo</a>
+      <a href="#products">Products</a>
+      <a href="#why-us">Why KTA</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero__copy">
+        <h1>Automate Cooking.<br/><span class="text-subtle">Elevate Business.</span></h1>
+        <p class="lead">
+          호주 외식업 환경에 최적화된 자동화 조리기기. <br/>
+          인건비를 줄이고, 맛은 표준화하고, 운영은 단순화합니다.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#products">제품 보기</a>
+          <a class="btn" href="#contact">도입 상담</a>
+        </div>
+        <ul class="hero__badges" aria-label="신뢰 포인트">
+          <li>기업용 품질</li>
+          <li>간편 유지보수</li>
+          <li>AGA 표준 준수 준비</li>
+        </ul>
+      </div>
+      <div class="hero__media" id="video">
+        <!-- YouTube: loads from data/videos.json -->
+        <div id="video-hero" class="yt-lite" data-title="KTA Demo" aria-label="제품 데모 동영상"></div>
+        <noscript>
+          <p>동영상을 보려면 자바스크립트를 활성화하세요.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- Case Study Carousel -->
+    <section class="cases container" aria-labelledby="cases-title">
+      <div class="section-head">
+        <h2 id="cases-title">성공 사례</h2>
+        <p class="sub">실제 매장에서 검증된 퍼포먼스. 링크만 추가하면 자동 반영됩니다.</p>
+      </div>
+      <div class="cases__grid" id="case-grid" role="list"></div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products container" aria-labelledby="products-title">
+      <div class="section-head">
+        <h2 id="products-title">제품 라인업</h2>
+        <p class="sub">초기에는 핵심 2–3개 제품으로 심플하게 시작하세요. 필요 시 확장도 쉽습니다.</p>
+      </div>
+      <div class="product-grid" id="product-grid" role="list"></div>
+    </section>
+
+    <!-- Why Us -->
+    <section id="why-us" class="why container">
+      <div class="section-head">
+        <h2>왜 KTA auto kitchen 인가요?</h2>
+      </div>
+      <div class="why__grid">
+        <article>
+          <h3>호주 외식업에 맞춘 설계</h3>
+          <p>고온·다량 조리에 강한 구조로 설계되어, 한식/아시안/버거숍 등 다양한 매장에 적용 가능합니다.</p>
+        </article>
+        <article>
+          <h3>인건비 절감</h3>
+          <p>자동화로 반복 작업을 줄여 숙련도 의존도를 낮추고, 운영을 표준화합니다.</p>
+        </article>
+        <article>
+          <h3>신뢰 가능한 서비스</h3>
+          <p>간편한 설치/유지보수 가이드를 제공하며, 부품/AS도 계획적으로 지원합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container" aria-labelledby="contact-title">
+      <div class="section-head">
+        <h2 id="contact-title">도입 상담</h2>
+        <p class="sub">문의 남겨주시면 1–2 영업일 내 연락드립니다.</p>
+      </div>
+      <form class="contact__form" name="contact" onsubmit="return KTA.handleContact(event)">
+        <label>
+          회사/매장명
+          <input type="text" name="company" required placeholder="예) KTA Korean BBQ" />
+        </label>
+        <label>
+          담당자 이름
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          연락처 (이메일 또는 전화)
+          <input type="text" name="contact" required />
+        </label>
+        <label>
+          관심 제품
+          <select name="product">
+            <option value="">선택하세요</option>
+          </select>
+        </label>
+        <label>
+          메시지
+          <textarea name="message" rows="4" placeholder="매장 형태, 좌석 수, 조리 메뉴 등을 알려주세요."></textarea>
+        </label>
+        <button class="btn btn--primary" type="submit">문의 보내기</button>
+        <p class="form-note">제출 시 로컬에서만 테스트용으로 콘솔에 출력됩니다.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> KTA auto kitchen · All rights reserved.</p>
+    <p class="small">※ 일부 제품은 AGA/RCM 등 인증 진행 중일 수 있습니다. 판매/설치 시 호주 규정 준수.</p>
+  </footer>
+
+  <script defer src="js/app.js"></script>
+</body>
+</html>
